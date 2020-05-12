@@ -92,7 +92,7 @@ nav a:hover { /*Menu ativo*/
 }
 .banner-right-title {
     color:#111;
-    font-size:60px;
+    font-size:46px;
     font-weight:lighter;
     margin-left:102px;
 }
@@ -100,6 +100,16 @@ nav a:hover { /*Menu ativo*/
     color:#005aae;
     font-weight:400;
     text-decoration:none;
+}
+.banner-options {
+    margin-top:30px;
+}
+.banner-options a {
+    padding:15px;
+    color:#FFF;
+    text-decoration:none;
+    border-radius:6px;
+    background-color:#02be6a;
 }
 /*==================================FOOTER==================================*/
 footer {

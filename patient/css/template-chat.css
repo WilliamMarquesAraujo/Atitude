@@ -92,7 +92,7 @@ nav a:hover { /*Menu ativo*/
     border-top-right-radius:6px;
     color:#FFF;
     padding-left:16px;
-    padding-right:200px;
+    width:360px;
     background-color:#509ee2;
 }
 .chat-left-search {
@@ -146,15 +146,27 @@ nav a:hover { /*Menu ativo*/
     width:900px;
     height:60px;
     display:flex;
-    align-items:flex-end;
-    justify-content:center;
-    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
     padding-right:16px;
     border-top-right-radius:6px;
+    border-top-left-radius:6px;
     background-color:#509ee2;
+}
+.chat-right-top-text {
+    display:flex;
+    align-items:flex-end;
+    flex-direction:column;
 }
 .chat-right-top-tag {
     font-size:13px;
+}
+.chat-right-top-picture {
+    width:50px;
+    height:50px;
+    margin-left:8px;
+    border-radius:25px;
+    background-color:#ddd;
 }
 .chat-right-body {
     width:900px;
@@ -168,6 +180,7 @@ nav a:hover { /*Menu ativo*/
 }
 .container-chat {
     height:500px;
+    padding:20px;
 }
 .chat-right-body input[type=text] {
     border:1px solid #ccc;
@@ -280,28 +293,54 @@ input[type=email] {
     .container {
         width:1100px;
     }
-    .services-right a {
-        padding:20px;
-        max-width:300px;
-    }
-    .chat-left img {
-        height:320px;
-        margin-left:20px;
-    }
 }
-@media (max-width:1100px) {
+@media (max-width:1280px) {
     .logo {
         margin-left:20px;
     }
     .menu {
         margin-right:20px;
     }
-    .chat-left img {
-        height:300px;
+    .chat-left-top {
+        width:320px;
     }
-    .chat-right-title {
-        font-size:44px;
-        margin-left:46px;
+    .chat-left-body {
+        width:320px;
+    }
+    .chat-right-top {
+        width:770px;
+    }
+    .chat-right-body {
+        width:770px
+    }
+    .chat-right-body input[type="text"] {
+        width:635px;
+    }
+}
+@media (max-width:1120px) { 
+    #chat .container {
+        flex:1;
+    }
+    .chat-left {
+        margin-left:20px;
+    }
+    .chat-right {
+        margin-right:20px;
+    }
+    .chat-left-top {
+        width:250px;
+    }
+    .chat-left-body {
+        width:250px;
+    }
+    .chat-right-top {
+        width:600px;
+    }
+    .chat-right-body {
+        width:600px;
+    }
+    .chat-right-body input[type="text"] {
+        width:465px;
     }
 }
 @media (max-width:900px) {
@@ -328,22 +367,31 @@ input[type=email] {
     }
     #chat {
         height:auto;
-        margin-top:100px;
+        margin-top:60px;
+        margin-bottom:400px
     }
     #chat .container{
         flex-direction:column;
     }
-    .chat-left img {
-        height:280px;
-    }
-    .chat-right-title {
-        font-size:32px;
-        text-align:center;
-        margin-top:30px;
+    .chat-left {
         margin-left:0px;
     }
-    .chat-option-title {
-        font-size:14px;
+    .chat-left-top {
+        width:600px;
+        border-radius:6px;
+        margin-bottom:15px;
+        background-color:#00c86d;
+    }
+    .chat-left-body {
+        display:none;
+    }
+    .chat-right {
+        align-items:center;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .chat-right-top {
+        border-top-left-radius:6px;
     }
     footer {
         height:auto;
@@ -355,31 +403,40 @@ input[type=email] {
         max-width:none;
     }
 }
+@media (max-width:630px) {
+    .chat-left-top {
+        width:500px;
+    }
+    .chat-right-top {
+        width:500px;
+    }
+    .chat-right-body {
+        width:500px;
+    }
+    .chat-right-body input[type="text"] {
+        width:366px;
+    }
+}
 @media (max-width:500px) {
     #chat {
         margin-top:80px;
     }
-    .chat-left img {
-        margin-left:none;
-        height:200px;
+    .chat-left-top {
+        width:350px;
     }
-    .chat-right-title {
-        margin-left:0px;
+    .chat-right-top {
+        width:350px;
     }
-    .chat-right-text {
-        margin-left:5px;
-        margin-right:5px;
+    .chat-right-body {
+        width:350px;
     }
-    .chat-options-patient {
-        margin-right:20px;
+    .chat-right-body input[type="text"] {
+        width:250px;
     }
-    .chat-options-patient a, .chat-options-doctor a {
-        padding:6px;
+    .chat-right-body button {
+        width:70px;
     }
-    .chat-option-img {
-        height:30px;
-    }
-    .chat-option-title {
-        font-size:13px;
+    .container-chat {
+        font-size:14px;
     }
 }

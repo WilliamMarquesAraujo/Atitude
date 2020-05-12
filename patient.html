@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +44,12 @@
                 <div class="banner-right-text">Marque atentamente seus sintomas para que seu atendimento seja melhor administrado</div>
                 <div class="banner-options">
                     <div class="banner-options-form">
-                        <form method="POST" action="patient/preload.php"> <!--TEMPORARIO SOMENTE PARA CRIAR O FRONTEND-->
+                        <form action="patient/preload.html"> <!--TEMPORARIO SOMENTE PARA CRIAR O FRONTEND-->
+                            <div class="banner-options-form-item column">
+                                <img src="assets/patient/images/question.png">
+                                <label for="name">Seu nome</label><br>
+                                <input type="text" id="name" name="name">
+                            </div>
                             <div class="banner-options-form-item column">
                                 <img src="assets/patient/images/help.png">
                                 <label for="idade">Idade</label><br>
@@ -74,12 +78,6 @@
                                 <img src="assets/patient/images/difficulty-breathing.png">
                                 <label for="faltaDeAr">Falta de ar</label><br>
                                 <input type="radio" id="faltaDeAr" name="faltaDeAr">
-                            </div>
-
-                            <div class="banner-options-form-item column">
-                                <img src="assets/patient/images/question.png">
-                                <label for="outros">Outros (Opcional)</label><br>
-                                <input type="text" id="outros" name="outros" placeholder="Ex: Forte dores na musculatura.">
                             </div>
                             <button>Avançar >></button>
                         </form>

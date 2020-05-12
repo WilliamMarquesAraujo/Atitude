@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,user-scalable=0"/>
-    <link rel="stylesheet" type="text/css" href="css/template-preload.css"/> <!--Meu template-->
+    <link rel="stylesheet" type="text/css" href="css/template-chat.css"/> <!--Meu template-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/> <!--Normalize css-->  
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"/> <!--Fontes-->
     <link rel="icon" type="image/png" sizes="192x192" href="images/icons/icon-192x192.png"/> <!--ICON-->
@@ -28,19 +28,64 @@
                     </div>
                     <ul>
                         <li class="active"><a href="../index.html">Inicio</a></li>
-                        <li><a href="../doctor.html">Quero ser um colaborador</a></li>
+                        <li><a href="../doctor.html">Meu perfil</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-<!--==================================BANNER==================================-->
-    <section id="banner">
+<!--==================================CHAT==================================-->
+    <section id="chat">
         <div class="container">
-            <div class="banner-left"><img src="images/banner-illustration.png"></div>
-            <div class="banner-right column">
-                <div class="banner-right-title">Aguarde para ser atendido sua posição na fila é  <a href="chat.php">1</a>.</div> <!--TEMPORARIO SOMENTE PARA DESENVOLVIMENTO DO FRONTEND-->
-                <div class="banner-options">
+            <div class="chat-left column">
+                <div class="chat-left-top">Próximos pacientes</div>
+                <div class="chat-left-search">
+                    <input type="search">
+                </div>
+                <div class="chat-left-body">
+                    <div class="chat-left-body-person active-chat">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Willian marques</div>
+                    </div>
+                    <div class="chat-left-body-person">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Caio freitas</div>
+                    </div>
+                    <div class="chat-left-body-person">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Leandra mattos</div>
+                    </div>
+                    <div class="chat-left-body-person">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Gabriel de Jesus</div>
+                    </div>
+                    <div class="chat-left-body-person">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Gabriel de Jesus</div>
+                    </div>
+                    <div class="chat-left-body-person">
+                        <div class="chat-left-body-person-picture"></div>
+                        <div class="chat-left-body-person-name">Gabriel de Jesus</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-right">
+                <div class="chat-right-top">
+                    <div class="chat-right-top-title">Willian marques</div>
+                    <div class="chat-right-top-tag">Paciente</div>
+                </div>
+                <div class="chat-right-body">
+                    <div class="container-chat">
+                        <div class="container-chat-tags">
+                            <div class="chat-tag">Febre</div>
+                            <div class="chat-tag">Tosse</div>
+                            <div class="chat-tag">Falta de ar</div>
+                        </div>
+                        
+                        Olá
+                    </div>
+                    <input type="text" placeholder="Escreva aqui...">
+                    <button>Enviar</button>
                 </div>
             </div>
         </div>

@@ -1,1 +1,208 @@
-...
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=0"/>
+    <link rel="stylesheet" type="text/css" href="assets/doctor/css/template-doctor.css"/> <!--Meu template-->
+    <link rel="stylesheet" type="text/css" href="assets/doctor/css/normalize.css"/> <!--Normalize css-->  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"/> <!--Fontes-->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/doctor/images/icons/icon-192x192.png"/> <!--ICON-->
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/doctor/images/icons/icon-72x72.png"/> <!--ICON-->
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/doctor/images/icons/icon-96x96.png"/> <!--ICON-->
+    <title>Atitude</title> <!--Titulo-->
+</head>
+<body>
+<!--==================================HEADER==================================-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/doctor/images/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile"><!--Menu mobile-->
+                        <div class="mm-line"></div><!--Linha 1-->
+                        <div class="mm-line"></div><!--Linha 2-->
+                        <div class="mm-line"></div><!--Linha 3-->
+                    </div>
+                    <ul>
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!--==================================BANNER==================================-->
+    <section id="banner">
+        <div class="container">
+            <div class="banner-left"><img src="assets/doctor/images/banner-illustration.png"></div>
+            <div class="banner-right column">
+                <div class="banner-right-title">Torne-se um voluntário. Sua <a href="">participação</a> faz <a href="">diferença!</a></div>
+                <div class="banner-right-form">
+                    <form action="doctor/preload.html">
+                        <div class="form-item">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome">
+                        </div>
+                        <div class="form-item">
+                            <label for="date">Data de nascimento:</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-item">
+                            <label for="rg">RG:</label>
+                            <input type="text" id="rg">
+                        </div>
+                        <div class="form-item">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf">
+                        </div>
+                        <div class="form-item">
+                            <label for="uf">UF:</label>
+                            <select id="uf" name="uf">
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="sp">São paulo</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="AC">Acre</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email para contato:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="crm">CRM:</label>
+                            <input type="text" id="crm">
+                        </div>
+                        <div class="form-item">
+                            <label for="especialidade">Especialidade</label>
+                            <select id="especialidade" name="especialidade">
+                                <option value="cardiologista">Cardiologista</option>
+                                <option value="alergista">Alergista</option>
+                                <option value="clinicogeral">Clinico geral</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="area">Área de atuação</label>
+                            <select id="area" name="area">
+                                <option value="hospital-publico">Hospital publico</option>
+                                <option value="hospital-particular">Hospital particular</option>
+                                <option value="clinica-particular">Clinica particular</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="file">Foto da carteirinha</label>
+                            <input type="file" id="file">
+                        </div>
+                        <button>Avançar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--==================================SERVICES==================================-->
+<section id="services">
+    <div class="container">
+        <div class="services-left">
+            <div class="services-left-title">Conheça alguns de nossos serviços</div>
+            <div class="services-left-text">
+                O Atitude é um programa que funciona em dois passos: primeiro o paciente passa por uma triagem que identificara suas 
+                necessidades e seu sintoma e apos isso, ele é encaminhado na mesma hora para um chat virtual para uma consulta com o medico.
+                Os medicos cadastrados no programa são totalmente voluntários e com diploma e com CRM reconhecidos, para dar mais segurança 
+                aos pacientes.
+            </div>
+        </div>
+        <div class="services-right">
+            <a href="#">
+                <div class="services-right-thumbnail"><img src="assets/home/images/reception.png"></div>
+                <div class="services-right-title">TRIAGEM DE PACIENTES</div>
+                <div class="services-right-text">
+                    Ao acessar o atitude, os pacientes passam por uma triagem através de perguntas para identificar os sintomas, que 
+                    medirão o grau de necessidade e a probabilidade de ter a COVID-19. A partir dai, o paciente será encaminhado para 
+                    um atendimento via chat com o medico mais próximo.
+                </div>
+            </a>
+            <a href="#">
+                <div class="services-right-thumbnail"><img src="assets/home/images/chat.png"></div>
+                <div class="services-right-title">ATENDIMENTO VIA CHAT</div>
+                <div class="services-right-text">
+                    Os atendimentos serão feitos via chat, já que estamos em tempo de quarentena, para evitar que o virus seja propagado.
+                    O teleatendimento é super seguro, eficaz, e no conforto da sua casa, com medico altamente qualificados e prontos para 
+                    te ajudar e tirar duvidas.
+                </div>
+            </a>
+            <a href="#">
+                <div class="services-right-thumbnail"><img src="assets/home/images/problem.png"></div>
+                <div class="services-right-title">AJUDA E SOLUÇÕES</div>
+                <div class="services-right-text">
+                    O Atitude foi desenvolvido para ajudar no combate a crise do Coronavirus que se espalhou pelo mundo todo, atraves de uma 
+                    alternativa mais segura - sem contato fisico entre pessoas - porem tão eficiente quanto uma consulta presencial.
+                </div>
+            </a>
+            <a href="#">
+                <div class="services-right-thumbnail"><img src="assets/home/images/info.png"></div>
+                <div class="services-right-title">INFORMAÇÕES</div>
+                <div class="services-right-text">
+                    Caso você, paciente ou médico colaborador, precise de mais informações ou queira tirar dúvidas sobre o funcionamento
+                    do programa Atitude, entre em contato conosco através de nossos canais e de nosso email.
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!--==================================FOOTER==================================-->
+    <footer>
+        <div class="container column">
+            <div class="footer-area">
+                
+                <div class="fm-1 column">
+                    <div class="footer-title">Sobre nós</div>
+                    <div class="footer-title-bar"></div>
+                    <div class="footer-text">O Atitude vai facilitar o contato entre o médico e o paciente, através de triagens e atendimento virtual.
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><img src="assets/doctor/images/facebook.png"></a>
+                        <a href="#" target="_blank"><img src="assets/doctor/images/twitter.png"></a>
+                        <a href="#" target="_blank"><img src="assets/doctor/images/google-plus.png"></a>
+                        <a href="#" target="_blank"><img src="assets/doctor/images/instagram.png"></a>
+                    </div>
+                </div>
+
+                <div class="fm-2 column">
+                    <div class="footer-title">Contate-nos</div>
+                    <div class="footer-title-bar"></div>
+                    <div class="footer-thumbnail"><img src="assets/doctor/images/support.png"></div>
+                    <div class="footer-text">
+                        Para mais informações, dúvidas, críticas ou elogios, entre em contato conosco 
+                        através dos nossos canais de atendimento e redes sociais
+                    </div>
+                    <div class="footer-text">
+                        atendimento@atitude.com.br
+                    </div>
+                </div>
+                <div class="fm-3 column">
+                    <div class="footer-title">Notícias</div>
+                    <div class="footer-title-bar"></div>
+                    <div class="footer-text">Fique atualizado com as nossas últimas notícias.</div>
+                    <div class="footer-input">
+                        <input type="email" placeholder="Seu email" maxlength="27">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!--=====================================================SCRIPT PARA O MENU MOBILE=====================================================-->
+<script type="text/javascript">
+    window.onload = function() {
+        document.querySelector(".menuMobile").addEventListener("click", function() {
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+    </script>
+</html>
